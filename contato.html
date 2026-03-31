@@ -1,12 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Contato - ANMPOL</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <img src="img/logo.png" class="logo">
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="menu">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Quem Somos</a>
+      <a href="diaspora.html">Diáspora</a>
+      <a href="atuacao.html">Atuação</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </div>
+</header>
+
 <section class="page">
   <div class="container">
     <h1>Contato</h1>
 
     <form>
-      <input type="text" placeholder="Nome">
-      <input type="email" placeholder="Email">
+      <input type="text" placeholder="Nome" required>
+      <input type="email" placeholder="Email" required>
       <textarea placeholder="Mensagem"></textarea>
-      <button>Enviar</button>
+      <button type="submit">Enviar</button>
     </form>
   </div>
 </section>
+
+<footer>© 2026 ANMPOL</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
