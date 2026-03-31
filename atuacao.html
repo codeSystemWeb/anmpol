@@ -1,47 +1,94 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>Atuação - ANMPOL</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANMPOL - Atuação</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<header>
-  <div class="container nav">
-    <img src="img/logo.png" class="logo">
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<header class="site-header">
+  <div class="container nav-bar">
+    <a href="index.html" class="brand">
+      <img src="img/logo.png" alt="Logo ANMPOL" class="logo">
+    </a>
 
-    <nav id="menu">
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="menu" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav id="menu" class="site-nav" aria-label="Menu principal">
+      <div class="menu-header">
+        <span>Menu</span>
+        <button class="menu-close" type="button" aria-label="Fechar menu">✕</button>
+      </div>
+
       <a href="index.html">Início</a>
       <a href="sobre.html">Quem Somos</a>
       <a href="diaspora.html">Diáspora</a>
-      <a href="atuacao.html">Atuação</a>
+      <a href="atuacao.html" class="active">Atuação</a>
       <a href="contato.html">Contato</a>
     </nav>
   </div>
 </header>
 
-<section class="page">
+<div id="overlay"></div>
+
+<main class="page-main">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Atuação Institucional</h1>
+      <p>Diplomacia subnacional, cooperação internacional e fortalecimento municipal.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="narrow section-text">
+        <p>
+          A ANMPOL atua como instrumento de diplomacia subnacional, promovendo a
+          cooperação direta entre municípios brasileiros e instituições públicas e
+          privadas da República da Polônia.
+        </p>
+
+        <p>
+          Essa atuação fortalece a diplomacia cultural, amplia o diálogo institucional
+          descentralizado e contribui para relações internacionais duradouras,
+          baseadas em identidade histórica, valores comuns e desenvolvimento sustentável.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card">
+          <h3>Municípios brasileiros</h3>
+          <p>Representação institucional e apoio à cooperação bilateral.</p>
+        </article>
+
+        <article class="card">
+          <h3>Regiões e municípios da Polônia</h3>
+          <p>Construção de parcerias, cidades-irmãs e intercâmbios oficiais.</p>
+        </article>
+
+        <article class="card">
+          <h3>Universidades e instituições culturais</h3>
+          <p>Integração acadêmica, cultural e técnica.</p>
+        </article>
+
+        <article class="card">
+          <h3>Embaixadas e governos</h3>
+          <p>Fortalecimento das relações institucionais e diplomáticas.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
   <div class="container">
-    <h1>Atuação Internacional</h1>
-
-    <p>
-      A ANMPOL promove cooperação entre municípios brasileiros
-      e instituições da Polônia.
-    </p>
-
-    <ul>
-      <li>Governos e municípios</li>
-      <li>Universidades</li>
-      <li>Instituições culturais</li>
-      <li>Organismos internacionais</li>
-    </ul>
+    <p>© 2026 ANMPOL. Todos os direitos reservados.</p>
   </div>
-</section>
-
-<footer>© 2026 ANMPOL</footer>
+</footer>
 
 <script src="js/script.js"></script>
 </body>
