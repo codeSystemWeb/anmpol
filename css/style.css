@@ -58,7 +58,7 @@ a {
   left: 0;
   width: 100%;
   height: var(--header-height);
-  background: rgba(0, 0, 0, 0.92);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(8px);
   z-index: 1000;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -90,7 +90,7 @@ a {
 }
 
 .site-nav a {
-  color: var(--color-white);
+  color: var(--color-red);
   text-decoration: none;
   font-size: 1rem;
   position: relative;
@@ -113,7 +113,7 @@ a {
 }
 
 .site-nav a.active {
-  color: var(--color-white);
+  color: var(--color-text);
 }
 
 .menu-toggle,
@@ -162,9 +162,7 @@ main {
   justify-content: center;
   text-align: center;
   overflow: hidden;
-  background:
-    radial-gradient(circle at center, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0) 40%),
-    linear-gradient(180deg, #0a0a0a 0%, #111111 100%);
+  background: rgb(112, 112, 112);
   color: var(--color-white);
 }
 
@@ -217,13 +215,13 @@ main {
 }
 
 .flag-br {
-  top: 18%;
+  top: 20%;
   left: 8%;
 }
 
 .flag-pl {
   right: 8%;
-  bottom: 16%;
+  top: 20%;
   animation-delay: 1.5s;
 }
 
