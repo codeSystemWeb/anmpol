@@ -120,7 +120,8 @@ a {
 .menu-close {
   border: 0;
   background: transparent;
-  color: var(--color-white);
+
+  color: var(--color-red);
   cursor: pointer;
 }
 
