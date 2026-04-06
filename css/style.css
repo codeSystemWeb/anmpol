@@ -162,8 +162,8 @@ main {
   justify-content: center;
   text-align: center;
   overflow: hidden;
-  background: rgb(112, 112, 112);
-  color: var(--color-white);
+  background: rgb(255, 255, 255);
+  color: var(--color-red-hover);
 }
 
 .hero-content {
@@ -208,6 +208,7 @@ main {
 }
 
 .flag {
+  box-shadow: 5px 5px 10px #000000;
   position: absolute;
   width: 150px;
   opacity: 0.18;
