@@ -239,7 +239,7 @@ main {
 }
 
 .page-hero {
-  background: linear-gradient(180deg, #111111 0%, #191919 100%);
+  background: linear-gradient(180deg, #ff0000 0%, #191919 100%);
   color: var(--color-white);
   padding: 70px 0 60px;
 }

@@ -51,3 +51,25 @@ window.addEventListener("resize", () => {
     closeMenu();
   }
 });
+
+
+document.getElementById("formContato").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const nome = document.querySelector('[name="nome"]').value;
+    const whats = document.querySelector('[name="whats"]').value;
+    const mensagem = document.querySelector('[name="mensagem"]').value;
+   
+    const numeroDestino = "5551999331079"; // SEU WHATS (com DDI + DDD)
+
+    const texto = `Olá, vim pelo site!\n\n` +
+                  `*Nome:* ${nome}\n` +
+                  `*WhatsApp:* ${whats}\n` +
+                  `*Mensagem:* ${mensagem}`;
+
+    const textoCodificado = encodeURIComponent(texto);
+
+    const url = `https://wa.me/${numeroDestino}?text=${textoCodificado}`;
+
+    window.open(url, "_blank");
+});
