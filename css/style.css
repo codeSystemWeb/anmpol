@@ -291,6 +291,11 @@ main {
   line-height: 1.2;
 }
 
+.a-assembleia {
+  text-decoration: none;
+  color: inherit;
+}
+
 .contact-form {
   background: var(--color-white);
   padding: 28px;
