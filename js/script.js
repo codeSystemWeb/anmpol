@@ -73,3 +73,6 @@ document.getElementById("formContato").addEventListener("submit", function(e) {
 
     window.open(url, "_blank");
 });
+
+
+
