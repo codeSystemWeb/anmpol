@@ -76,3 +76,45 @@ document.getElementById("formContato").addEventListener("submit", function(e) {
 
 
 
+function openVideoModal(videoSrc) {
+  const modal = document.getElementById("videoModal");
+  const video = document.getElementById("modalVideo");
+  const source = document.getElementById("modalVideoSource");
+
+  source.src = videoSrc;
+  video.load();
+
+  modal.classList.add("active");
+  document.body.classList.add("modal-open");
+
+  video.play().catch(() => {});
+}
+
+function closeVideoModal() {
+  const modal = document.getElementById("videoModal");
+  const video = document.getElementById("modalVideo");
+  const source = document.getElementById("modalVideoSource");
+
+  video.pause();
+  video.currentTime = 0;
+  source.src = "";
+  video.load();
+
+  modal.classList.remove("active");
+  document.body.classList.remove("modal-open");
+}
+
+function toggleDescription(button) {
+  const description = button.closest(".video-description");
+  description.classList.toggle("expanded");
+
+  button.textContent = description.classList.contains("expanded")
+    ? "Mostrar menos"
+    : "Mostrar mais";
+}
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    closeVideoModal();
+  }
+});

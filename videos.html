@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="img/ANMPOL.ico" type="image/x-icon">
+  <title>ANMPOL - Quem Somos</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-bar">
+    <a href="index.html" class="brand">
+      <img src="img/logo.png" alt="Logo ANMPOL" class="logo">
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="menu" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav id="menu" class="site-nav" aria-label="Menu principal">
+      <div class="menu-header">
+        <span>Menu</span>
+        <button class="menu-close" type="button" aria-label="Fechar menu">✕</button>
+      </div>
+
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Quem Somos</a>
+      <a href="diaspora.html">Diáspora</a>
+      <a href="missao.html">Missão</a>
+      <a href="atuacao.html">Atuação</a>
+      <a href="assembleia.html">Assembleias</a>
+      <a href="videos.html" class="active">Videos</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<div id="overlay"></div>
+
+<main class="page-main">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Vídeos</h1>
+      <p>Conteúdos institucionais da ANMPOL.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <section class="content-section videos-section">
+  <div class="container">
+        <div class="video-grid">
+      <article class="video-card">
+        <div class="video-thumb" onclick="openVideoModal('videos/v1.mp4')">
+          <img src="videos/thumb-v1.jpg" alt="Convite Oficial – Assembleia Geral da ANMPOL">
+          <button class="play-button" aria-label="Reproduzir vídeo">▶</button>
+        </div>
+
+        <div class="video-card-content">
+          <h3>Convite Oficial – Assembleia Geral da ANMPOL</h3>
+
+          <div class="video-description">
+            <p class="desc-short">
+              O Diretor-Geral da ANMPOL, <strong>Dalvi Doares de Freitas</strong>, reforça o convite para a
+              <strong>Primeira Assembleia Geral da Associação Nacional dos Municípios com Etnia Polonesa no Brasil (ANMPOL)</strong>,
+              que será realizada no dia <strong>22 de abril de 2026</strong>, em <strong>Porto Alegre (RS)</strong>.
+            </p>
+
+            <div class="desc-more">
+              <p>
+                Este importante encontro marca o primeiro grande ato institucional nacional da entidade, reunindo
+                representantes de municípios brasileiros com forte presença da cultura e da imigração polonesa.
+              </p>
+
+              <p>
+                Na ocasião, serão oficialmente apresentadas as prefeituras, câmaras municipais e entidades já integrantes
+                da associação, consolidando a estrutura inicial da ANMPOL. Também ocorrerá a criação de novos cargos de
+                representação nacional, com eleição e posse durante o evento.
+              </p>
+
+              <p>
+                Outro destaque da programação será o anúncio da <strong>primeira Missão Institucional da ANMPOL à República da Polônia</strong>,
+                iniciativa que visa fortalecer a cooperação cultural, educacional e econômica entre os municípios brasileiros
+                e instituições polonesas.
+              </p>
+
+              <p>
+                O evento contará ainda com a presença de <strong>três deputados federais da Polônia</strong>, além de representantes
+                de instituições públicas e privadas ligadas à comunidade polonesa e às relações bilaterais entre Brasil e Polônia.
+              </p>
+
+              <p>
+                A Assembleia representa um marco histórico na articulação nacional dos municípios com herança polonesa,
+                promovendo o fortalecimento institucional, o intercâmbio internacional e a valorização da identidade cultural
+                dessas comunidades.
+              </p>
+
+              <p><strong>Sua presença é fundamental para esse momento histórico.</strong></p>
+
+              <p class="video-contact">
+                <strong>Informações e contato para imprensa</strong><br>
+                Instagram: @anmpol<br>
+                E-mail: contato.anmpol@gmail.com<br>
+                WhatsApp: (51) 99692-9066
+              </p>
+            </div>
+
+            <button class="toggle-desc" type="button" onclick="toggleDescription(this)">
+              Mostrar mais
+            </button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <div class="video-modal" id="videoModal">
+    <div class="video-modal-overlay" onclick="closeVideoModal()"></div>
+
+    <div class="video-modal-content">
+      <button class="video-modal-close" type="button" onclick="closeVideoModal()" aria-label="Fechar vídeo">
+        ✕
+      </button>
+
+      <video id="modalVideo" controls playsinline>
+        <source id="modalVideoSource" src="" type="video/mp4">
+        Seu navegador não suporta vídeo em HTML5.
+      </video>
+    </div>
+  </div>
+</section>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+
+    <p>© 2026 ANMPOL. Todos os direitos reservados.</p>
+
+    <div class="footer-social">
+      <a 
+        href="https://www.instagram.com/anmpolbrasil" 
+        target="_blank" 
+        aria-label="Instagram ANMPOL"
+      >
+        <i class="fa fa-instagram"></i>
+        @anmpolbrasil
+      </a>
+    </div>
+
+    <p>
+      Desenvolvido por
+      <a
+        class="color-white"
+        href="https://www.codesystemweb.com.br"
+        target="_blank"
+      >
+        <i class="fa fa-code" aria-hidden="true"></i> CodeSystem
+      </a>
+    </p>
+
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
