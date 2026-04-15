@@ -728,12 +728,14 @@ main {
 
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 220px));
   gap: 20px;
-  justify-items: center;
+  justify-content: start;
 }
 
 .video-card {
+  width: 100%;
+  /* max-width: 350px; */
   background: #fff;
   border-radius: 18px;
   overflow: hidden;
@@ -745,48 +747,53 @@ main {
   position: relative;
   cursor: pointer;
   background: #111;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
 }
 
 .video-thumb img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
-  height: auto;
 }
 
 .play-button {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 74px;
-  height: 74px;
+  width: 58px;
+  height: 58px;
   transform: translate(-50%, -50%);
   border: none;
   border-radius: 50%;
   background: rgba(200, 19, 19, 0.92);
   color: #fff;
-  font-size: 28px;
+  font-size: 22px;
   cursor: pointer;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
 }
 
 .video-card-content {
-  padding: 24px;
+  padding: 16px;
 }
 
 .video-card-content h3 {
-  margin-bottom: 16px;
-  font-size: 1.5rem;
-  line-height: 1.2;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  line-height: 1.3;
 }
 
 .video-description p {
   color: #444;
-  line-height: 1.7;
+  line-height: 1.55;
+  font-size: 0.88rem;
 }
 
 .desc-more {
   display: none;
-  margin-top: 14px;
+  margin-top: 12px;
 }
 
 .video-description.expanded .desc-more {
@@ -794,24 +801,23 @@ main {
 }
 
 .toggle-desc {
-  margin-top: 18px;
+  margin-top: 14px;
   border: none;
   background: transparent;
   color: #c81313;
   font-weight: 700;
   cursor: pointer;
   padding: 0;
-  font-size: 0.98rem;
+  font-size: 0.9rem;
 }
 
 .video-contact {
   background: #f8f8f8;
-  padding: 16px;
-  border-radius: 12px;
-  margin-top: 14px;
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 12px;
 }
 
-/* MODAL */
 .video-modal {
   position: fixed;
   inset: 0;
@@ -867,18 +873,13 @@ body.modal-open {
 }
 
 @media (max-width: 768px) {
-  .video-card-content {
-    padding: 20px;
+  .video-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 
-  .video-card-content h3 {
-    font-size: 1.25rem;
-  }
-
-  .play-button {
-    width: 62px;
-    height: 62px;
-    font-size: 24px;
+  .video-card {
+    max-width: 320px;
   }
 
   .video-modal-content {
