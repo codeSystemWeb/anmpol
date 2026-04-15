@@ -697,3 +697,26 @@ main {
     grid-template-columns: 1fr;
   }
 }
+
+
+.footer-social {
+  margin: 15px 0;
+}
+
+.footer-social a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  color: #e1306c; /* cor oficial do Instagram */
+}
+
+.footer-social i {
+  font-size: 18px;
+}
