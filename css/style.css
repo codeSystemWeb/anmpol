@@ -113,7 +113,7 @@ a {
 }
 
 .site-nav a.active {
-  color: var(--color-text);
+  color: rgb(0, 17, 255);
 }
 
 .menu-toggle,
