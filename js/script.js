@@ -63,7 +63,7 @@ if (formContato) {
     const whats = document.querySelector('[name="whats"]').value;
     const mensagem = document.querySelector('[name="mensagem"]').value;
 
-    const numeroDestino = "5551999331079";
+    const numeroDestino = "5551991707507";
 
     const texto = `Olá, vim pelo site!\n\n` +
                   `*Nome:* ${nome}\n` +
